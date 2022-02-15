@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    background: url("images/pattern-background-desktop.svg") no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+}
+
+/* Typography */
+
+h2 {
+    font-size: 1.5rem;
+    color: hsl(223, 47%, 23%);
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-size: 13px;
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
+}
+
+p, span{
+    font-size: 13px;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+}
+
+/* Layout */
+
+.container {
+    width: 350px;
+    margin: 0 auto;
+    background-color: white;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    border: 1px solid hsl(225, 100%, 94%);
+    border-radius: 15px;
+}
+
+.hero {
+    width: 100%;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+
+.info-container {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.info {
+    text-align: center;
+    padding: 30px 15px 15px;
+    line-height: 1.5;
+}
+
+.payment-info {
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    padding: 15px;
+    margin-bottom: 25px;
+    border: 1px solid hsl(225, 100%, 98%);
+    border-radius: 10px;
+}
+
+/* Main Section */
+
+.music-icon {
+    width: 40px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    line-height: 1.5;
+}
+
+.link {
+    color: hsl(245, 75%, 52%);
+    font-size: 12px;
+    padding-top: 10px;
+    padding-left: 65px;
+    font-weight: 700;
+}
+
+.link a {
+    color: hsl(245, 75%, 52%);
+}
+
+a:hover {
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+/* Buttons */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+button {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.payment-btn {
+    color:hsl(225, 100%, 94%);
+    background-color: hsl(245, 75%, 52%);
+    box-shadow: 0px 15px 18px hsl(225, 100%, 94%);
+}
+
+.payment-btn:hover {
+    background-color: hsl(248, 56%, 65%);
+}
+
+.cancel-btn {
+    background-color: #fff;
+    color: hsl(224, 23%, 55%);
+}
+
+.cancel-btn:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+/* Footer */
+
+.attribution { 
+    font-size: 14px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: blue; 
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    color: hsl(245, 75%, 52%);
+}
+
+
+/* From a max width of 500px and smaller */
+
+@media ( max-width: 500px ) {
+
+    /* Layout */
+    .container {
+        width: 300px;
+        min-height: auto;
+        margin:0 auto;
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
+
+    .info-container {
+        width: 82%;
+        margin-bottom: 20px;
+    }
+
+    .payment-info {
+        margin-bottom: 15px;
+    }
+
+    /* Main Section */
+    .info {
+        padding-top: 20px;
+    }
+
+    .music-icon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .row {
+        font-size: 12px;
+    }
+    
+    .link {
+        padding-left: 40px;
+    }
+
+.link a {
+    color: hsl(245, 75%, 52%);
+}
+
+    /* Button */
+    button {
+        padding: 13px;
+        font-size: 14px;
+    }
+    
+    /* Footer */
+    .attribution { 
+        font-size: 13px; 
+    }
+
+} 
