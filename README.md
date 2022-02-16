@@ -55,6 +55,4 @@ Practice DRY more.
 
 ## Author
 
-- Website - [Ikulayo Samuel](https://www.your-site.com)
 - Frontend Mentor - [@Ikquilibrium-SG](https://www.frontendmentor.io/profile/ikquilibrium-sg)
-- Twitter - [@ikquilibrium](https://www.twitter.com/ikquilibrium)
